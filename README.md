@@ -1,44 +1,74 @@
-Instructions to use FoodPath-
 
 
-Either you can use our deployed link-
+## 🥗 Instructions to Use **FoodPath**
 
+You can try **FoodPath** in two ways:
 
-(https://foodpath-0fyf.onrender.com/)
+### ✅ Option 1: Use the Deployed Link
 
+Access the live version here:
+🔗 [https://foodpath-0fyf.onrender.com/](https://foodpath-0fyf.onrender.com/)
 
-or you follow the below steps -
+---
 
+### ⚙️ Option 2: Run Locally on Your Machine
 
+Follow the steps below to set up and run the project locally:
 
-1.First install the node package manager  in the backend directory by entering the command in the terminal as-
-<br>
-  npm init -y
-<br>
-and also install the following plugins for the backend server-
-<br>
-  npm install express cors body-parser
-<br>
-<br>
-  npm install dotenv
-<br>
-2.And then start the server by entering the command in the terminal as-
-<br>
-  node app.js
-<br>
-3.After this go to frontend directory and enter the following commands to setup frontend plugins-
-<br>
-  npm react-router-dom
-<br>
-4.After installing the above plugin , use the following command to execute the frontend
-<br>
-  npm start
-<br>
+---
 
-Note: If anything is missing or error occurs use the following command in the terminal-
-<br>
-  npm install missing-components(keep angular brackets only for missing-components)
-<br>
+### 📦 Backend Setup
 
+1. Navigate to the `backend` directory and initialize Node:
 
-**By doing the above , one can use the foodpath web**
+   ```bash
+   npm init -y
+   ```
+
+2. Install the required backend dependencies:
+
+   ```bash
+   npm install express cors body-parser dotenv
+   ```
+
+3. Start the backend server:
+
+   ```bash
+   node app.js
+   ```
+
+---
+
+### 🎨 Frontend Setup
+
+4. Go to the `frontend` directory and install necessary packages:
+
+   ```bash
+   npm install react-router-dom
+   ```
+
+5. Start the frontend application:
+
+   ```bash
+   npm start
+   ```
+
+---
+
+### ❗ Troubleshooting
+
+If you encounter any missing module errors, use the following command to install them:
+
+```bash
+npm install <missing-package-name>
+```
+
+*(Replace `<missing-package-name>` with the actual package name shown in the error.)*
+
+---
+
+### 📅 Project Timeline
+
+This project was developed between **February and April 2025** as part of a web development initiative.
+
+---
