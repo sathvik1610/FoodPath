@@ -1,0 +1,38 @@
+.pacman-container {
+  display: flex;
+  align-items: center;
+  position:relative;
+}
+
+.pacman {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  object-fit: contain;
+  object-position: center;
+  z-index: 10;
+  position: relative;
+}
+
+.food-queue {
+  display: flex;
+  gap: 10px;
+  animation: moveQueue 0.5s linear infinite;
+  position: relative;
+}
+
+.food-queue img {
+  position: relative;
+  z-index:5;
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes moveQueue {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}

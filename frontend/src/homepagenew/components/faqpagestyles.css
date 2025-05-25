@@ -1,0 +1,87 @@
+.content-overlay4 {
+    display: flex;
+    flex-direction: column;
+    background-color: #CA8263 ; /* Slightly transparent for floating effect */
+    width: 94%; /* Width of the main content area */
+    margin-top: 20px;
+    height: 550vh;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    z-index: 10; /* Ensures overlay is above the background */
+    display: flex;
+    margin-bottom: 2rem;
+}
+.about-text {
+    position: relative; /* Make the text container relative */
+    z-index: 2; /* Place text content above the blurred background */
+}
+
+.text-right {
+    text-align: right; /* Aligns the text content to the right */
+    margin-left: auto;  /* Pushes the element to the right */
+}
+.q8{
+    margin-bottom: 100px;
+}
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px 40px;
+    display: flex;
+    height: 40vh;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.footer-left {
+    max-width: 70%;
+}
+
+.footer-description {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+    font-family: "Work Sans", serif;
+    line-height: 1.6;
+}
+
+.footer-contact {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "Work Sans", serif;
+
+    color: #555;
+}
+
+.footer-contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    text-align: right;
+}
+
+.copyright {
+    font-size: 14px;
+    font-family: "Work Sans", serif;
+    color: #555;
+}
+
+
+

@@ -1,0 +1,35 @@
+.nosigninbackground{
+    background: linear-gradient(45deg, #1b2a38 40%, #2a3d52 70%, #3e4b64 100%);
+    background-size: 200% 200%; /* Enlarges the gradient for smoother movement */
+    animation: gradientMove 4s ease infinite;
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+.inputinfoheading2{
+  font-family: 'Work Sans' , Arial, Helvetica, sans-serif;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+  

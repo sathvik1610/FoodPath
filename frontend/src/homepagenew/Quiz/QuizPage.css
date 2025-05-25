@@ -1,0 +1,237 @@
+.quiz-container {
+  background: linear-gradient(45deg, #1b2a38, #3e4b64);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color: #f0f0f0;
+}
+
+.score-section {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.question-section {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 600px;
+}
+
+.question-text {
+  margin: 10px 0 20px;
+  font-size: 18px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-button {
+  background: #ca8263;
+  color: #fff;
+  border: none;
+  /* border-radius: 5px; */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.option-button:hover {
+  background: #a5614d;
+}
+
+h2, h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+/* Final Score Section */
+.score-section {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(120deg, #1b2a38, #3e4b64, #1c2e3b);
+  color: #f0f0f0;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease-in-out;
+  max-width: 600px;
+  margin: auto;
+}
+
+.score-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.score-display {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.score-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.score-value {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fffdf9;
+ 
+}
+
+.feedback-text {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    color: #ca8263;
+    transform: scale(1);
+  }
+  50% {
+    color: #f0f0f0;
+    transform: scale(1.1);
+  }
+}
+.retrybutton{
+  font-family: 'Helvetica W01 Light';
+  margin-top:20px;
+  font-size: medium;
+  width: 178px;
+  background-color: #1C2E3B;
+  border-color:white;
+  border-width:1px;
+  padding:0;
+  color:white;
+  height:40px;
+  padding:8px 16px 10px 16px;
+  transition: color 0.25s, border-color 0.3s, background-color 0.3s;
+}
+.retrybutton:hover{
+  color:#1C2E3B;
+  border-color: #CA8263;
+  background-color: #CA8263;
+}
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+/* QuizPage.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align modal closer to the top */
+  z-index: 1000;
+  overflow: auto; /* Allow scrolling for smaller screens */
+  padding-top: 20px; /* Add padding for better visibility */
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+ margin-top: 2rem;
+
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%; /* Limit the height to enable scrolling */
+  overflow-y: auto; /* Enable vertical scroll if content overflows */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative; /* Ensure child elements like buttons are properly positioned */
+}
+
+.close-button {
+  background-color: #1C2E3B;
+  font-family: 'Helvetica W01 Light';
+  color: white;
+  margin-top:20px;
+  border-width: 1px;
+
+  padding: 5px 10px;
+  border-color:black;
+width: 80px;
+height: 38px;
+  cursor: pointer;
+  position: absolute; /* Position it within the modal */
+  top: 10px; /* Ensure enough space at the top */
+  right: 10px;
+  transition: color 0.25s, border-color 0.3s, background-color 0.3s;
+
+}
+.retrybutton{
+
+  font-size: medium;
+  width: 178px;
+  border-width:1px;
+  padding:0;
+  color:white;
+  height:40px;
+  padding:8px 16px 10px 16px;
+}
+.close-button:hover{
+  color:#1C2E3B;
+  border-color: black;
+  background-color: #CA8263;
+}
+
+
+/* .preview-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.preview-button:hover {
+  background: #0056b3;
+} */
+
+.retrybutton {
+    display: block; /* Stack buttons vertically */
+  margin: 15px 0; /* Add vertical spacing between buttons */
+
+}

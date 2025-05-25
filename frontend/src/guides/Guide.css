@@ -1,0 +1,600 @@
+@import url('https://db.onlinewebfonts.com/c/e89eb1cff9eb261b0d77a4dea27f1ef1?family=Helvetica+W01+Light');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*.App {*/
+/*  text-align: center;*/
+/*  font-family: 'Arial', sans-serif;*/
+/*  padding: 80px;*/
+
+
+/*}*/
+
+
+
+
+/* h1 {
+  text-align: center;
+  border-radius: 30%;
+  font-size: 5em;
+  color:white;
+
+} */
+/* .container {
+  display: flex;
+
+
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s;
+} */
+.header {
+  position: sticky; /* This will make the header float */
+  top: 0; /* Position it at the top of the viewport */
+  width: 100%; /* Make it span the full width of the page */
+  z-index: 1000; /* Keep it above other content */
+  background-color: #1c2e3b; /* Ensure it has a background color */
+  padding: 1rem; /* Add some padding for aesthetics */
+}
+
+
+.food-image-i{
+  float: right;
+  margin-right: 20px;
+  width: 400px;
+  height: 300px;
+
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+  transition: filter 0.5s ease-in-out;
+  border-radius: 20%;
+  filter: brightness(1.159);
+  transition: transform 0.3s;
+}
+.food-image-i:hover {
+  filter: brightness(1.2);
+  transform: scale(1.4);
+}
+img
+{
+  transition: transform 0.3s;
+}
+.img:hover{
+  transform: scale(1.4);
+}
+
+
+
+.newhead{
+  border-radius:1em;
+ padding-top: 2em;
+  height:5em ;
+  text-align: center;
+  background-color: rgb(200, 238, 225);
+}
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+}
+
+.food-item {
+
+  margin: 20px 0;
+ color:white;
+
+
+
+  overflow: hidden;
+
+}
+.food-item-s {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+  background-color: #fff;
+  width:100%;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.food-item-c {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+  height:7em;
+  width:100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.food-item-i {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+  height:7em;
+  width:100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.heading{
+  text-align: justify;
+}
+/*.newflex{*/
+/*  position: relative;*/
+/* direction: ltr;*/
+/* padding-left: 1rem;*/
+/*}*/
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .food-image {
+      margin-top: 1em;
+      padding-left: 0.5em;
+      padding-top: 1em;
+      padding-bottom: 0.3em;
+      width: 45%;
+      height: auto;
+      filter: drop-shadow(0px 0px 10px grey);
+  }
+
+  .food-content {
+      padding: 15px;
+  }
+}
+
+.food-item:hover {
+  transform: scale(1.02);
+}
+.food-item-c:hover {
+  transform: scale(1.02);
+}
+.food-item-s:hover {
+  transform: scale(1.02);
+}
+.food-item-i:hover {
+  transform: scale(1.02);
+}
+.food-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+  transition: filter 0.5s ease-in-out;
+}
+
+.food-image:hover {
+  filter: brightness(1.2);
+}
+
+.food-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.head3 {
+  font-size: 1.5rem;
+  color:white;
+}
+.head2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #1c2e3b;
+  font-color: #1c2e3b;
+}
+
+.head5 {
+  font-size: 1.5rem;
+  color:black;
+}
+.heading{
+  text-align: justify;
+  color: white;
+}
+@keyframes teextGlow {
+  0%, 100% {
+      text-shadow: 0 0 5px  #fffdf9;
+  }
+  50% {
+      text-shadow: 0 0 10px  #fffdf9;
+  }
+}
+.containernew{
+  border-radius: 1em;
+  color: #fffdf9;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+@keyframes textGlow {
+  0%, 100% {
+      text-shadow: 0 0 5px #2e8b57;
+  }
+  50% {
+      text-shadow: 0 0 15px #2e8b57;
+  }
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.good-foods, .bad-foods {
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .food-item {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .food-image {
+      margin-top: 1em;
+      padding-left: 0.5em;
+      padding-top: 1em;
+      padding-bottom: 0.3em;
+      width: 45%;
+      height: auto;
+      filter: drop-shadow(0px 0px 10px grey);
+  }
+
+  .food-content {
+      padding: 15px;
+
+  }
+}
+/*.App {*/
+/*  text-align: center;*/
+/*  font-family: 'Arial', sans-serif;*/
+/*  padding: 20px;*/
+/*  position: relative;*/
+/*  overflow: hidden;*/
+
+/*  background-size: cover;*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: center;*/
+
+/*}*/
+
+@keyframes waveAnimation {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+@keyframes floatParticles {
+  0% {
+      transform: translateY(0);
+      opacity: 1000;
+  }
+  50% {
+      transform: translateY(-30px);
+      opacity: 0.7;
+  }
+  100% {
+      transform: translateY(10px);
+      opacity: 1000;
+  }
+}
+
+.particle {
+  width: 10px;
+  height: 10px;
+  background-color: #38d94b;
+  border-radius: 40%;
+  position: absolute;
+  animation: floatParticles 5s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+.particle:nth-child(18) {
+  left:20%;
+  animation-duration: 7s;
+}
+.particle:nth-child(3) {
+  left: 40%;
+  animation-duration: 9s;
+}
+.particle:nth-child(4) {
+  left: 60%;
+  animation-duration: 6s;
+}
+.particle:nth-child(5) {
+  left: 80%;
+  animation-duration: 8s;
+}
+
+.nparticle {
+  width: 10px;
+  height: 10px;
+  background-color: #de4331;
+  border-radius: 40%;
+  position: absolute;
+  animation: floatParticles 5s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+.nparticle:nth-child(18) {
+  left:20%;
+  animation-duration: 7s;
+}
+.nparticle:nth-child(3) {
+  left: 40%;
+  animation-duration: 9s;
+}
+.nparticle:nth-child(4) {
+  left: 60%;
+  animation-duration: 6s;
+}
+.nparticle:nth-child(5) {
+  left: 80%;
+  animation-duration: 8s;
+}
+.right-section {
+  flex: 1;
+  display: flex;
+  width:10%;
+  height:5%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.para{
+  font-size: 39px;
+  text-align: center;
+  color: black;
+  text-decoration: solid;
+  position: relative;
+
+margin-bottom: 2em;
+}
+.foodpara{
+  font-size: 1.25rem;
+
+}
+body{
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+  border-radius: 1px;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+.food-iteml{
+  margin-right: 45%;
+  text-align: left;
+  padding: 50px;
+}
+
+.food-itemr{
+  margin-left: 45%;
+  text-align: right;
+  padding: 50px;
+}
+.newflex{
+  background-color: #1c2e3b;
+  width: 94%;
+  border-radius: 20px;
+  padding: 5rem;
+  margin-left: 1.6%;
+  background: linear-gradient(45deg, #1b2a38 40%, #2a3d52 70%, #3e4b64 100%);
+
+}
+.newhead{
+  background-color:  #1c2e3b;
+  width: 94%;
+  border-radius: 20px;
+  padding: 20px;
+
+  margin-left: 1.6%;
+  padding-bottom: 2em;
+  margin-bottom: 1em;
+
+
+
+
+}
+.good-foods{
+  background-color:  #fffdf9;
+  width: 94%;
+  border-radius: 20px;
+  padding: 3rem;
+  margin-left: 1.6%;
+  font-size: 20px;
+
+
+}
+.bad-foods {
+  width: 94%;
+  border-radius: 20px;
+  padding: 16px;
+  margin-left: 1.6%;
+  font-family: 'Helvetica W01 Light';
+  font-size: 20px;
+  background-image: linear-gradient(225deg,
+  #e2b571 0%,
+  #d3a174 25%,
+  #CA8263 50%,
+  #ca8263 75%,
+  #e2b571 100%
+  );
+  background-size: 200% 200%; /* Adjusted background size for smoother animation */
+  animation: gradientMove 7s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.head5{
+  font-family: 'Work Sans';
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 0;
+
+
+}
+.head3{
+  font-family: 'Work Sans';
+  font-size: 48px;
+  font-weight: 300;
+
+
+
+
+}
+
+
+.head1{
+  font-family: 'Work Sans';
+  font-size: 48px;
+  font-weight: 300;
+
+
+}
+.head2{
+  font-family: 'Work Sans';
+  font-size: 40px;
+  font-weight: 400;
+padding: 2rem;
+  text-align: center;
+
+}
+.head4{
+  font-family: 'Work Sans';
+  font-weight: 300;
+  color:#fffdf9;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  color: #fffdf9;
+}
+.heading{
+  font-family: 'Work Sans';
+  font-size: 30px;
+  font-weight: 300;
+
+
+}
+.strongreplace{
+  font-family: 'Work Sans';
+  font-size: 48px;
+  font-weight: 300;
+}
+.foodtext{
+  font-family: 'Work Sans';
+  font-size: 20px;
+  font-weight: 500;
+
+
+}
+/* Card Container for Better Layout */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Food Card Styling */
+.food-card {
+  background: #1C2E3B;
+  color: #fffdf9;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 300px;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #1b2a38 40%, #2a3d52 70%, #3e4b64 100%);
+
+}
+
+
+
+.food-card:hover {
+  transform: translateY(-10px);
+}
+
+.food-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #ca8263; /* Separate the image with a border */
+}
+
+.food-card-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.food-card-title {
+  font-family: 'Work Sans';
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #cac6c6;
+  margin-bottom: 10px;
+}
+
+.foodpara {
+  font-size: 1rem;
+  color: #cac6c6;
+  line-height: 1.4;
+
+}
+
+.head31 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #1c2e3b;
+  font-family: 'Helvetica W01 Light';
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.guide-content {
+  height: 100vh; /* Sets the height to the full viewport height */
+  overflow-y: auto; /* Adds a scrollbar if content exceeds the set height */
+}
+.card-container.four-elements {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+
+

@@ -1,0 +1,214 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@font-face {
+  font-family: "RobotoSlab-Regular";
+  src: url("../../fonts/RobotoSlab-Regular.ttf");
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #6B7280;
+}
+
+/* .notsignedin{
+  background: radial-gradient(circle at center, #1c2a3b 50%, #2a3d52 80%, #3e4b64 100%);
+} */
+
+.mainelements {
+  font-family: Arial, Helvetica, sans-serif;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.organinfo {
+  background-color: #1c2e3b;
+  width: calc(50vw - 381px);
+  display: flex;
+  flex-direction: column;
+  max-height: 95%;
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden;
+  
+}
+
+.organinfolabel {
+  color:#c0c0c0;
+  font-family: "Helvetica W01 Light";
+  margin-left: 20px;
+  font-size: large;
+  min-width: 100%;
+}
+
+.organinfoinputs {
+  font-family: "Helvetica W01 Light";
+  margin-bottom: 20px;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #1c2e3b;
+  background-color: #fffdf9;
+  margin-left: 20px;
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 18vw;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #1c2e3b;
+  resize: none;
+}
+
+.organinfoinputsingle {
+  font-family: "Helvetica W01 Light";
+  margin-bottom: 20px;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #1c2e3b;
+  background-color: #fffdf9;
+  margin-left: 20px;
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  height: 35px;
+  width: 18vw;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #1c2e3b;
+  resize: none;
+}
+
+.model2d {
+  margin-left: 0px;
+  height: calc(100vh - 64px);
+  width: 845px;
+  background-color: #c0c0c0;
+}
+
+.inputinfo {
+  background-color: #1c2e3b;
+  width: calc(50vw - 381px);
+}
+
+.inputinfoelements {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputinfoheading {
+  margin-left: 30px;
+  font-family: "Helvetica W01 Light";
+  color: #c0c0c0;
+  margin-bottom: 18px;
+  font-size: 26px;
+}
+/* .inputaddfood{
+  white-space: pre-wrap; 
+  overflow-wrap: break-word;
+  resize: none;
+  background-color: #fffdf9;
+  height:60px;
+  border-color: #1C2E3B;
+  border-width: 1px;
+  width:80%;
+  margin-left:30px;
+} */
+.inputbuttons {
+  margin-left: 30px;
+  font-family: "Helvetica W01 Light";
+  font-size: medium;
+  width: 178px;
+  background-color: #1c2e3b;
+  border-color: white;
+  border-width: 1px;
+  padding: 0;
+  color: white;
+  height: 40px;
+  padding: 8px 16px 10px 16px;
+  margin-bottom: 20px;
+  transition: color 0.25s, border-color 0.3s, background-color 0.3s,
+    border-width 0.3s;
+}
+
+.inputbuttons1{
+  margin-left: 30px;
+  font-family: "Helvetica W01 Light";
+  font-size: medium;
+  width: 178px;
+  background-color: #1c2e3b;
+  border-color: white;
+  border-width: 1px;
+  padding: 0;
+  color: white;
+  height: 40px;
+  padding: 8px 16px 10px 16px;
+  margin-bottom: 20px;
+  transition: color 0.25s, border-color 0.3s, background-color 0.3s,border-width 0.3s;
+}
+.inputbuttons1:hover {
+  border-color: #1c2e3b;
+  border-width: 1px;
+  color: #1c2e3b;
+  background-color: #ca8263;
+}
+
+.inputbuttons:hover {
+  border-color: #1c2e3b;
+  border-width: 1px;
+  color: #1c2e3b;
+  background-color: #ca8263;
+}
+
+.textareas {
+  white-space: pre-wrap;
+  background-color: #fffdf9;
+  overflow-wrap: break-word;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-radius: 6px;
+  border-bottom-color: #1c2e3b;
+  width: 80%;
+  height: 30px;
+  max-height: 150px;
+  resize: none;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  padding-top: 6px;
+  padding-left: 5px;
+}
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #1c2e3b;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.path-heart:hover {
+  fill-opacity: 0.2;
+}
+.path-lungs:hover {
+  fill-opacity: 0.2;
+}
+.path-brain:hover {
+  fill-opacity: 0.2;
+}
+.path-stomach:hover {
+  fill-opacity: 0.2;
+}
+.path-liver:hover {
+  fill-opacity: 0.2;
+}
+.path-intestine:hover {
+  fill-opacity: 0.2;
+}

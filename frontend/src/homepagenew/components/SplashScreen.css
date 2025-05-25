@@ -1,0 +1,28 @@
+@import url('https://db.onlinewebfonts.com/c/e89eb1cff9eb261b0d77a4dea27f1ef1?family=Helvetica+W01+Light');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+.splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #1b2a38 40%, #2a3d52 70%, #3e4b64 100%);
+
+    /*background: linear-gradient(45deg, #1c2e3b 40%, #2a3d52 60%, #3e4b64 80%, #3e4b64 100%);*/
+
+}
+
+.splash-text {
+    font-size: 7rem; /* Large text size */
+    color: white;
+    font-family: 'Cinzel', sans-serif;
+    text-align: center;
+}
+
+.superscript {
+    font-size: 0.6em; /* Smaller size for superscript */
+    vertical-align: super; /* Positions the trademark above the line */
+    margin-left: 0.1em; /* Small space between the text and superscript */
+}
